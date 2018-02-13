@@ -16,6 +16,10 @@ public void mouseDragged()//optional
 public void sierpinski(int x, int y, int len) 
 { 
   int what = mouseY;
+  if(what == 0)
+  {
+    what = 10;
+  }
   if(len <=what)
   {
     noStroke();
